@@ -17,7 +17,9 @@ Para instalar NodeJS y NPM accede a este enlace y sigue las instrucciones: https
   
   2. Abrir una terminal en el directorio del proyecto y ejecutar `npm install`.
   
-  3. Ejecutar `npm start` para levantar el proyecto.
+  3. Crear un fichero llamado .env en el directorio raíz del proyecto (al mismo nivel que el fichero package.json). El contenido de este fichero será similar al que contiene el fichero example.env incluido en este proyecto (los valores del example.env son válidos y han sido usados para este desarrollo).
+  
+  4. Ejecutar `npm start` para levantar el proyecto.
 
 ## Captura del proyecto
 
