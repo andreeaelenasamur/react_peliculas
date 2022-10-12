@@ -9,7 +9,10 @@ const ApiMovie = ({movies, api_img}) => {
             <h2 className="text-white mb-3">Popular</h2>
             <div className="row justify-content-center gx-2 ">
                 {movies.map((movieReq) =>
-                    <MovieBox api_img={api_img} key={movieReq.id} {...movieReq}
+                    <MovieBox
+                        api_img={api_img}
+                        key={movieReq.id}
+                        {...movieReq}
                     />
                 )}
             </div>

@@ -4,7 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import "../../App.css"
 import { AiTwotoneStar } from "react-icons/ai";
 
-const CarouselContainer = ({movies, api_img, vote_average, release_date}) => {
+const CarouselContainer = ({movies, api_img}) => {
 
     const bestSellers = movies.slice(0,20);
 
@@ -24,9 +24,13 @@ const CarouselContainer = ({movies, api_img, vote_average, release_date}) => {
 
                         <Carousel.Caption bsPrefix="mx-5 carousel-caption start-0 w-50 text-start text-white">
                                 <h1 className="w-50 fw-bold fs-1">{movieReq.title}</h1>
-                                <h4><span className="me-4">{movieReq.release_date}</span> {movieReq.vote_average}  <AiTwotoneStar style={{color:"yellow", marginBottom:"20px", fontSize:"1rem"}}/></h4>
+                                <h4>
+                                    <span className="me-4">{movieReq.release_date}</span> 
+                                    {movieReq.vote_average}  
+                                    <AiTwotoneStar style={{color:"yellow", marginBottom:"20px", fontSize:"1rem"}}/>
+                                </h4>
                                 <p className="fst-italic">{movieReq.overview}</p>
-                            </Carousel.Caption>
+                        </Carousel.Caption>
                     </Carousel.Item>
                 ))}
             </Carousel>

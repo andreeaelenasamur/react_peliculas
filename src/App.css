@@ -4,7 +4,6 @@
 	height: 100%;
 }
 
-
 .container_img {
 	position: relative;
 	width: 100%;
@@ -37,11 +36,8 @@
   }
   
   .text {
-	/* background-color: #040c04; */
 	color: rgb(5, 2, 2);
-	/* font-size: 15px; */
 	padding-top: 240px;
-	/* padding-bottom: 20px; */
 	padding-left: 10px;
   }
 
